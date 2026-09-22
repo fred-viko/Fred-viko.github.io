@@ -1,0 +1,949 @@
+html>
+
+<html lang="en">  <head>  <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Gikomba 3 | Quality Wear Near Egerton University</title>  <meta name="description"  
+content="Gikomba 3 offers affordable clothing, sweaters, shirts, trousers, jeans, bags, fleece, hoods and more around Egerton University with distribution across Kenya.">
+
+<style>  
+  
+/* =========================  
+   BASIC SETTINGS  
+========================= */  
+  
+*{  
+    box-sizing:border-box;  
+    margin:0;  
+    padding:0;  
+}  
+  
+html{  
+    scroll-behavior:smooth;  
+}  
+  
+body{  
+    font-family:Arial,Helvetica,sans-serif;  
+    background:#f5f5f5;  
+    color:#222;  
+}  
+  
+  
+/* =========================  
+   HEADER  
+========================= */  
+  
+header{  
+    background:#111;  
+    color:white;  
+    text-align:center;  
+    padding:22px 15px;  
+}  
+  
+header h1{  
+    font-size:32px;  
+    letter-spacing:3px;  
+}  
+  
+header p{  
+    margin-top:7px;  
+    color:#ccc;  
+    font-size:15px;  
+}  
+  
+  
+/* =========================  
+   NAVIGATION  
+========================= */  
+  
+nav{  
+    position:sticky;  
+    top:0;  
+    z-index:1000;  
+    background:#222;  
+    display:flex;  
+    justify-content:center;  
+    gap:5px;  
+    padding:12px 5px;  
+    box-shadow:0 2px 10px rgba(0,0,0,0.25);  
+}  
+  
+nav a{  
+    color:white;  
+    text-decoration:none;  
+    padding:10px 12px;  
+    border-radius:6px;  
+    font-weight:bold;  
+    font-size:14px;  
+}  
+  
+nav a:hover{  
+    background:#008000;  
+}  
+  
+  
+/* =========================  
+   HOME  
+========================= */  
+  
+.home{  
+    min-height:78vh;  
+  
+    display:flex;  
+    justify-content:center;  
+    align-items:center;  
+  
+    text-align:center;  
+  
+    padding:60px 20px;  
+  
+    background:  
+    linear-gradient(  
+        rgba(0,0,0,0.6),  
+        rgba(0,0,0,0.6)  
+    ),  
+    url("https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1400&q=80");  
+  
+    background-size:cover;  
+    background-position:center;  
+  
+    color:white;  
+}  
+  
+.home-content{  
+    max-width:800px;  
+}  
+  
+.home h2{  
+    font-size:45px;  
+    margin-bottom:18px;  
+}  
+  
+.home h3{  
+    font-size:24px;  
+    margin-bottom:18px;  
+}  
+  
+.home p{  
+    font-size:18px;  
+    line-height:1.7;  
+    margin-bottom:30px;  
+}  
+  
+.shop-now{  
+    display:inline-block;  
+  
+    background:#008000;  
+    color:white;  
+  
+    padding:15px 32px;  
+  
+    border-radius:8px;  
+  
+    text-decoration:none;  
+  
+    font-size:18px;  
+    font-weight:bold;  
+}  
+  
+.shop-now:hover{  
+    background:#006400;  
+}  
+  
+  
+/* =========================  
+   SECTIONS  
+========================= */  
+  
+section{  
+    padding:55px 18px;  
+}  
+  
+.section-title{  
+    text-align:center;  
+    font-size:30px;  
+    margin-bottom:30px;  
+}  
+  
+  
+/* =========================  
+   SHOP  
+========================= */  
+  
+#shop{  
+    background:#f5f5f5;  
+}  
+  
+.shop-intro{  
+    text-align:center;  
+    color:#555;  
+    margin-bottom:35px;  
+}  
+  
+.products{  
+  
+    max-width:1200px;  
+  
+    margin:auto;  
+  
+    display:grid;  
+  
+    grid-template-columns:  
+    repeat(auto-fit,minmax(210px,1fr));  
+  
+    gap:20px;  
+}  
+  
+.product{  
+  
+    background:white;  
+  
+    border-radius:12px;  
+  
+    overflow:hidden;  
+  
+    box-shadow:  
+    0 3px 12px rgba(0,0,0,0.12);  
+  
+    transition:0.2s;  
+}  
+  
+.product:hover{  
+    transform:translateY(-5px);  
+}  
+  
+.product img{  
+  
+    width:100%;  
+  
+    height:230px;  
+  
+    object-fit:cover;  
+  
+    display:block;  
+}  
+  
+.product-info{  
+    padding:18px;  
+}  
+  
+.product-info h3{  
+    margin-bottom:8px;  
+    font-size:19px;  
+}  
+  
+.product-info p{  
+    color:#666;  
+    margin-bottom:8px;  
+    line-height:1.4;  
+}  
+  
+.price{  
+  
+    color:#008000 !important;  
+  
+    font-size:20px;  
+  
+    font-weight:bold;  
+}  
+  
+  
+/* =========================  
+   ORDER BOX  
+========================= */  
+  
+.order-box{  
+  
+    max-width:650px;  
+  
+    margin:45px auto 0;  
+  
+    background:white;  
+  
+    padding:28px;  
+  
+    border-radius:12px;  
+  
+    box-shadow:  
+    0 3px 12px rgba(0,0,0,0.12);  
+}  
+  
+.order-box h3{  
+  
+    text-align:center;  
+  
+    margin-bottom:20px;  
+  
+    font-size:25px;  
+}  
+  
+label{  
+  
+    display:block;  
+  
+    margin-top:16px;  
+  
+    margin-bottom:7px;  
+  
+    font-weight:bold;  
+}  
+  
+select,  
+input{  
+  
+    width:100%;  
+  
+    padding:13px;  
+  
+    border:1px solid #ccc;  
+  
+    border-radius:7px;  
+  
+    font-size:16px;  
+}  
+  
+.order-button{  
+  
+    width:100%;  
+  
+    margin-top:23px;  
+  
+    padding:15px;  
+  
+    border:none;  
+  
+    border-radius:8px;  
+  
+    background:#25D366;  
+  
+    color:white;  
+  
+    font-size:17px;  
+  
+    font-weight:bold;  
+  
+    cursor:pointer;  
+}  
+  
+.order-button:hover{  
+    background:#1da851;  
+}  
+  
+  
+/* =========================  
+   ABOUT  
+========================= */  
+  
+#about{  
+  
+    background:white;  
+  
+    text-align:center;  
+}  
+  
+.about-text{  
+  
+    max-width:800px;  
+  
+    margin:auto;  
+  
+    color:#555;  
+  
+    font-size:17px;  
+  
+    line-height:1.8;  
+}  
+  
+  
+/* =========================  
+   LOCATION  
+========================= */  
+  
+#location{  
+  
+    background:#eeeeee;  
+  
+    text-align:center;  
+}  
+  
+.location-box{  
+  
+    max-width:750px;  
+  
+    margin:auto;  
+  
+    background:white;  
+  
+    padding:30px;  
+  
+    border-radius:12px;  
+}  
+  
+.location-box p{  
+  
+    margin:15px 0;  
+  
+    line-height:1.6;  
+}  
+  
+  
+/* =========================  
+   CONTACT  
+========================= */  
+  
+#contact{  
+  
+    background:#111;  
+  
+    color:white;  
+  
+    text-align:center;  
+}  
+  
+.contact-box{  
+  
+    max-width:650px;  
+  
+    margin:auto;  
+}  
+  
+.contact-box p{  
+  
+    margin:15px;  
+  
+    font-size:18px;  
+}  
+  
+.whatsapp{  
+  
+    display:inline-block;  
+  
+    margin-top:18px;  
+  
+    padding:15px 28px;  
+  
+    background:#25D366;  
+  
+    color:white;  
+  
+    text-decoration:none;  
+  
+    border-radius:8px;  
+  
+    font-weight:bold;  
+}  
+  
+.whatsapp:hover{  
+    background:#1da851;  
+}  
+  
+  
+/* =========================  
+   FOOTER  
+========================= */  
+  
+footer{  
+  
+    background:#000;  
+  
+    color:#aaa;  
+  
+    text-align:center;  
+  
+    padding:20px;  
+  
+    font-size:14px;  
+}  
+  
+  
+/* =========================  
+   MOBILE  
+========================= */  
+  
+@media(max-width:600px){  
+  
+    nav{  
+  
+        overflow-x:auto;  
+  
+        justify-content:flex-start;  
+    }  
+  
+    nav a{  
+  
+        white-space:nowrap;  
+  
+        font-size:13px;  
+    }  
+  
+    .home h2{  
+  
+        font-size:32px;  
+    }  
+  
+    .home h3{  
+  
+        font-size:20px;  
+    }  
+  
+    .home p{  
+  
+        font-size:16px;  
+    }  
+  
+    .products{  
+  
+        grid-template-columns:  
+        repeat(2,1fr);  
+  
+        gap:12px;  
+    }  
+  
+    .product img{  
+  
+        height:175px;  
+    }  
+  
+    .product-info{  
+  
+        padding:12px;  
+    }  
+  
+    .product-info h3{  
+  
+        font-size:16px;  
+    }  
+  
+    .product-info p{  
+  
+        font-size:14px;  
+    }  
+  
+    .price{  
+  
+        font-size:17px;  
+    }  
+  
+}  
+  
+</style>  </head>  <body>  <!-- =========================  
+     HEADER  
+========================= -->  <header>  <h1>GIKOMBA 3</h1>  <p>  
+Quality Wear • Affordable Prices • Kenya Wide  
+</p>  </header>  <!-- =========================  
+     NAVIGATION  
+========================= -->  <nav>  <a href="#home">🏠 Home</a>
+
+<a href="#shop">🛍️ Shop</a>
+
+<a href="#about">ℹ️ About</a>
+
+<a href="#location">📍 Location</a>
+
+<a href="#contact">📞 Contact</a>
+
+</nav>  <!-- =========================  
+     HOME  
+========================= -->  <section class="home" id="home">  <div class="home-content">  <h2>  
+WELCOME TO GIKOMBA 3  
+</h2>  <h3>  
+Style That Speaks. Prices That Make Sense.  
+</h3>  <p>  Discover quality clothing and fashion items
+at affordable prices.
+
+From official wear and sweaters to jeans,
+bags, fleece, hoods and more.
+
+Serving customers around Egerton University
+and distributing across Kenya.
+
+</p>  <a  
+href="#shop"  
+class="shop-now">
+
+🛍️ SHOP NOW
+
+</a>  </div>  </section>  <!-- =========================  
+     SHOP  
+========================= -->  <section id="shop">  <h2 class="section-title">  🛍️ OUR SHOP
+
+</h2>  <p class="shop-intro">  Choose your product and place your order
+directly through WhatsApp.
+
+</p>  <div class="products">  <!-- =================================================  
+     YOUR PHOTO 1  
+     Put your first photo here:  
+     images/photo1.jpg  
+================================================= -->  <div class="product">  <img  
+src="images/photo1.jpg"  
+alt="Gikomba 3 product">
+
+<div class="product-info">  <h3>Tote Bag</h3>  <p>  
+Fashionable tote bags  
+</p>  <p class="price">  
+KSh 200 / 450  
+</p>  </div>  </div>  <!-- =================================================  
+     YOUR PHOTO 2  
+     Put your second photo here:  
+     images/photo2.jpg  
+================================================= -->  <div class="product">  <img  
+src="images/photo2.jpg"  
+alt="Gikomba 3 tote bag">
+
+<div class="product-info">  <h3>Tote Bag</h3>  <p>  
+Quality tote bags  
+</p>  <p class="price">  
+KSh 200 / 450  
+</p>  </div>  </div>  <!-- =================================================  
+     YOUR PHOTO 3  
+     Put your third photo here:  
+     images/photo3.jpg  
+================================================= -->  <div class="product">  <img  
+src="images/photo3.jpg"  
+alt="Gikomba 3 official shirt">
+
+<div class="product-info">  <h3>Official Shirt</h3>  <p>  
+Male & Female  
+</p>  <p class="price">  
+KSh 200 / 350  
+</p>  </div>  </div>  <!-- =================================================  
+     YOUR PHOTO 4  
+     Put your fourth photo here:  
+     images/photo4.jpg  
+================================================= -->  <div class="product">  <img  
+src="images/photo4.jpg"  
+alt="Gikomba 3 fleece">
+
+<div class="product-info">  <h3>Fleece</h3>  <p>  
+Warm quality fleece  
+</p>  <p class="price">  
+KSh 500  
+</p>  </div>  </div>  <!-- =================================================  
+     YOUR PHOTO 5  
+     Put your fifth photo here:  
+     images/photo5.jpg  
+================================================= -->  <div class="product">  <img  
+src="images/photo5.jpg"  
+alt="Gikomba 3 outerwear">
+
+<div class="product-info">  <h3>Hood / Half Coat</h3>  <p>  
+Warm and stylish outerwear  
+</p>  <p class="price">  
+KSh 300  
+</p>  </div>  </div>  <!-- =========================  
+     SOCKS  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?auto=format&fit=crop&w=600&q=80"  
+alt="Socks">
+
+<div class="product-info">  <h3>Socks</h3>  <p>  
+Comfortable quality socks  
+</p>  <p class="price">  
+KSh 30  
+</p>  </div>  </div>  <!-- =========================  
+     BONNETS  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?auto=format&fit=crop&w=600&q=80"  
+alt="Bonnets">
+
+<div class="product-info">  <h3>Bonnets</h3>  <p>  
+Stylish bonnets  
+</p>  <p class="price">  
+KSh 100  
+</p>  </div>  </div>  <!-- =========================  
+     HALF SWEATER  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=600&q=80"  
+alt="Half Sweater">
+
+<div class="product-info">  <h3>Half Sweater</h3>  <p>  
+Quality half sweaters  
+</p>  <p class="price">  
+KSh 300 / 350  
+</p>  </div>  </div>  <!-- =========================  
+     OFFICIAL TROUSERS  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80"  
+alt="Official Trousers">
+
+<div class="product-info">  <h3>Official Trousers</h3>  <p>  
+Male & Female  
+</p>  <p class="price">  
+KSh 100 / 300 / 500  
+</p>  </div>  </div>  <!-- =========================  
+     PANTIES  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=600&q=80"  
+alt="Panties">
+
+<div class="product-info">  <h3>Panties</h3>  <p>  
+Quality underwear  
+</p>  <p class="price">  
+KSh 200  
+</p>  </div>  </div>  <!-- =========================  
+     OFFICIAL SWEATER  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=600&q=80"  
+alt="Official Sweater">
+
+<div class="product-info">  <h3>Official Sweater</h3>  <p>  
+Quality official sweaters  
+</p>  <p class="price">  
+KSh 400 / 500  
+</p>  </div>  </div>  <!-- =========================  
+     HOODS  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80"  
+alt="Hood">
+
+<div class="product-info">  <h3>Hoods</h3>  <p>  
+Warm and stylish  
+</p>  <p class="price">  
+KSh 300  
+</p>  </div>  </div>  <!-- =========================  
+     HALF COAT  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=600&q=80"  
+alt="Half Coat">
+
+<div class="product-info">  <h3>Half Coat</h3>  <p>  
+Warm quality half coat  
+</p>  <p class="price">  
+KSh 300  
+</p>  </div>  </div>  <!-- =========================  
+     TRENCH COAT  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=600&q=80"  
+alt="Trench Coat">
+
+<div class="product-info">  <h3>Trench Coat</h3>  <p>  
+Stylish trench coat  
+</p>  <p class="price">  
+KSh 300  
+</p>  </div>  </div>  <!-- =========================  
+     MEN JEANS  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80"  
+alt="Men Jeans">
+
+<div class="product-info">  <h3>Men Jeans</h3>  <p>  
+Quality men's jeans  
+</p>  <p class="price">  
+KSh 400 / 500  
+</p>  </div>  </div>  <!-- =========================  
+     JERSEY  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=600&q=80"  
+alt="Jersey">
+
+<div class="product-info">  <h3>Jersey</h3>  <p>  
+Quality sports jerseys  
+</p>  <p class="price">  
+KSh 500  
+</p>  </div>  </div>  <!-- =========================  
+     HOODIE  
+========================= -->  <div class="product">  <img  
+src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80"  
+alt="Hoodie">
+
+<div class="product-info">  <h3>Hoodie</h3>  <p>  
+Comfortable quality hoodie  
+</p>  <p class="price">  
+KSh 500  
+</p>  </div>  </div>  </div>  <!-- =========================  
+     ORDER FORM  
+========================= -->  <div class="order-box">  <h3>  
+🛒 PLACE YOUR ORDER  
+</h3>  <label for="product">  
+Select Product  
+</label>  <select id="product">  <option>Socks - KSh 30</option>  <option>Bonnets - KSh 100</option>  <option>Official Shirt - KSh 200 / 350</option>  <option>Half Sweater - KSh 300 / 350</option>  <option>Tote Bag - KSh 200 / 450</option>  <option>Official Trousers - KSh 100 / 300 / 500</option>  <option>Panties - KSh 200</option>  <option>Official Sweater - KSh 400 / 500</option>  <option>Hoods - KSh 300</option>  <option>Half Coat - KSh 300</option>  <option>Trench Coat - KSh 300</option>  <option>Men Jeans - KSh 400 / 500</option>  <option>Fleece - KSh 500</option>  <option>Jersey - KSh 500</option>  <option>Hoodie - KSh 500</option>  </select>  <label for="size">  
+Select Size  
+</label>  <select id="size">  <option>Not Applicable</option>  <option>Small (S)</option>  <option>Medium (M)</option>  <option>Large (L)</option>  <option>Extra Large (XL)</option>  <option>XXL</option>  </select>  <label for="quantity">  
+Quantity  
+</label>  <input
+type="number"
+id="quantity"
+value="1"
+min="1"
+
+> 
+
+<label for="customer">  
+Your Name  
+</label>  <input
+type="text"
+id="customer"
+placeholder="Enter your name"
+
+> 
+
+<label for="locationOrder">  
+Delivery / Pickup Location  
+</label>  <input
+type="text"
+id="locationOrder"
+placeholder="Enter your location"
+
+> 
+
+<button  
+class="order-button"  
+onclick="placeOrder()">
+
+💬 ORDER THROUGH WHATSAPP
+
+</button>  </div>  </section>  <!-- =========================  
+     ABOUT  
+========================= -->  <section id="about">  <h2 class="section-title">  ℹ️ ABOUT GIKOMBA 3
+
+</h2>  <p class="about-text">  Gikomba 3 is a clothing and fashion business
+based around Egerton University.
+
+<br><br>
+
+We offer affordable clothing and fashion items
+for both male and female customers.
+
+<br><br>
+
+Our products include sweaters, shirts, trousers,
+jeans, bags, fleece, hoods, coats and more.
+
+<br><br>
+
+We also distribute our products
+<strong>all over Kenya.</strong>
+
+<br><br>
+
+Our goal is simple:
+
+<strong>  
+Quality clothing • Affordable prices • Convenient ordering  
+</strong>  </p>  </section>  <!-- =========================  
+     LOCATION  
+========================= -->  <section id="location">  <h2 class="section-title">  📍 LOCATION & DELIVERY
+
+</h2>  <div class="location-box">  <p>  
+📍 <strong>Based around Egerton University</strong>  
+</p>  <p>  
+🚚 <strong>Distribution available all over Kenya</strong>  
+</p>  <p>  
+📦 Order through WhatsApp and arrange delivery.  
+</p>  <p>  
+📱 Contact us before placing your order  
+to confirm availability and delivery arrangements.  
+</p>  </div>  </section>  <!-- =========================  
+     CONTACT  
+========================= -->  <section id="contact">  <h2 class="section-title">  📞 CONTACT GIKOMBA 3
+
+</h2>  <div class="contact-box">  <p>  
+📱 WhatsApp:  
+<strong>0703 882 345</strong>  
+</p>  <p>  
+📍 Around Egerton University  
+</p>  <p>  
+🚚 Kenya-wide distribution  
+</p>  <a  
+class="whatsapp"  
+href="https://wa.me/254703882345?text=Hello%20Gikomba%203%2C%20I%20would%20like%20to%20make%20an%20order.">
+
+💬 CHAT WITH US ON WHATSAPP
+
+</a>  </div>  </section>  <!-- =========================  
+     FOOTER  
+========================= -->  <footer>  © 2026 Gikomba 3
+
+<br>  Quality Wear • Affordable Prices • Kenya
+
+</footer>  <!-- =========================  
+     JAVASCRIPT  
+========================= -->  <script>  
+  
+function placeOrder(){  
+  
+let product =  
+document.getElementById("product").value;  
+  
+let size =  
+document.getElementById("size").value;  
+  
+let quantity =  
+document.getElementById("quantity").value;  
+  
+let customer =  
+document.getElementById("customer").value;  
+  
+let location =  
+document.getElementById("locationOrder").value;  
+  
+  
+if(customer.trim()===""){  
+  
+alert("Please enter your name.");  
+  
+return;  
+  
+}  
+  
+  
+if(location.trim()===""){  
+  
+alert("Please enter your delivery or pickup location.");  
+  
+return;  
+  
+}  
+  
+  
+let message =  
+  
+"Hello Gikomba 3!%0A%0A" +  
+  
+"I would like to place an order.%0A%0A" +  
+  
+"Name: " +  
+  
+encodeURIComponent(customer) +  
+  
+"%0A" +  
+  
+"Product: " +  
+  
+encodeURIComponent(product) +  
+  
+"%0A" +  
+  
+"Size: " +  
+  
+encodeURIComponent(size) +  
+  
+"%0A" +  
+  
+"Quantity: " +  
+  
+encodeURIComponent(quantity) +  
+  
+"%0A" +  
+  
+"Location: " +  
+  
+encodeURIComponent(location) +  
+  
+"%0A%0A" +  
+  
+"Thank you.";  
+  
+  
+let whatsapp =  
+  
+"https://wa.me/254703882345?text=" +  
+  
+message;  
+  
+  
+window.open(  
+whatsapp,  
+"_blank"  
+);  
+  
+}  
+  
+</script>  </body>  </html>
